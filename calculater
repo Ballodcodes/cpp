@@ -1,0 +1,103 @@
+#include <iostream>
+
+using namespace std;
+void add()
+{
+    int x=0;
+    int y;
+    int add=0;
+
+    cout <<"enter first number number: ";
+    cin >>x;
+    cout <<"enter second number number: ";
+    cin >>y;
+
+    add=x+y;
+    cout<< "addition of two number is: "<<add;
+}
+void sub()
+{
+    int x=0;
+    int y;
+    int sub=0;
+
+    cout <<"enter first number number: ";
+    cin >>x;
+    cout <<"enter second number number: ";
+    cin >>y;
+
+    sub=x-y;
+    cout<< "substraction of two number is: "<<sub; 
+} 
+void mul()
+{
+    int x=0;
+    int y;
+    int mul=0;
+
+    cout <<"enter first number number: ";
+    cin >>x;
+    cout <<"enter second number number: ";
+    cin >>y;
+
+    mul=x*y;
+    cout<< "multiplication of two number is: "<<mul; 
+}
+void div()
+{
+    int x=0;
+    int y;
+    int div=0;
+
+    cout <<"enter first number number: ";
+    cin >>x;
+    cout <<"enter second number number: ";
+    cin >>y;
+
+    if(y==0){
+        cout<< " can't divide by 0";
+    }
+    div=x/y;
+    cout<< "division of two number is: "<<div;   
+}
+int main()
+{
+    int choice;
+    do
+    {
+    cout<<"1 for addition"<<endl;
+    cout<<"2 for subtraction"<<endl;
+    cout<<"3 for multiplication"<<endl;
+    cout<<"4 for division"<<endl;
+    cout<<"5 for exit"<<endl;
+    cout << "enter ur choice: ";
+    cin>>choice;
+    switch (choice)
+    {
+    case 1:
+        add();
+
+        break;
+    case 2:
+        sub();
+        
+        break;    
+    case 3:
+        mul();
+    
+        
+        break;
+    case 4:
+        div();
+        
+        break;
+    case 5:
+        exit;
+        
+        break;    
+    default:
+        cout<<"wrong input" << endl;
+        break;
+    }
+    }while(choice!= 5); 
+}
